@@ -1,149 +1,206 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Login</title>
+<title>Happy Birthday Noor Fatima ❤️</title>
+
 <style>
-  body{
-    margin:0;
-    font-family: "Poppins", sans-serif;
-    background:#e8e8ec;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-  }
-  .container{
-    width:900px;
-    background:white;
-    border-radius:20px;
-    display:flex;
-    overflow:hidden;
-    box-shadow:0 5px 30px rgba(0,0,0,0.15);
-  }
-  .left{
-    flex:1;
-    background:#e8e8ec;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-  }
-  .left img{
-    width:90%;
-  }
-  .right{
-    flex:1;
-    background:#ffffff;
-    padding:60px 50px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-  }
-  .logo{
-    font-size:35px;
-    text-align:center;
-    margin-bottom:20px;
-  }
-  h2{
-    margin:0;
-    text-align:center;
-    font-size:28px;
-    font-weight:700;
-    margin-bottom:5px;
-  }
-  p{
-    text-align:center;
-    color:#6d6d6d;
-    margin-bottom:40px;
-    font-size:14px;
-  }
-  label{
-    font-size:14px;
-    color:#333;
-  }
-  input{
-    width:100%;
-    padding:12px 5px;
-    margin-top:3px;
-    margin-bottom:20px;
-    border:none;
-    border-bottom:1px solid #ccc;
-    outline:none;
-    font-size:15px;
-  }
-  .row{
-    display:flex;
-    justify-content:space-between;
-    font-size:14px;
-    margin-bottom:25px;
-  }
-  .row a{
-    color:#6d6d6d;
-    text-decoration:none;
-  }
-  .login-btn{
-    width:100%;
-    background:black;
-    color:white;
-    padding:15px;
-    border:none;
-    border-radius:40px;
-    font-size:16px;
-    cursor:pointer;
-    margin-bottom:20px;
-  }
-  .google-btn{
-    width:100%;
-    background:#f7f7f7;
-    border-radius:40px;
-    padding:15px;
-    text-align:center;
-    font-size:16px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:10px;
-    cursor:pointer;
-    border:1px solid #e3e3e3;
-  }
-  .bottom-text{
-    text-align:center;
-    margin-top:15px;
-    font-size:14px;
-  }
-  .bottom-text a{
-    text-decoration:none;
-    color:black;
-    font-weight:600;
-  }
+    body {
+        margin: 0;
+        padding: 0;
+        background: radial-gradient(circle at center, #ffcef4, #ff7dcc, #ff3fa1);
+        overflow: hidden;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        color: white;
+    }
+
+    /* ✨ 3D NEON HEADING ✨ */
+    h1 {
+        font-size: 70px;
+        font-weight: 900;
+        margin-top: 50px;
+        animation: neonPulse 2.5s infinite alternate ease-in-out;
+        letter-spacing: 2px;
+
+        text-shadow:
+            0 0 10px #fff,
+            0 0 20px #ffb3e8,
+            0 0 40px #ff66d6,
+            0 0 60px #ff1ab3,
+            0 0 80px #ff0099;
+    }
+
+    @keyframes neonPulse {
+        0% { transform: scale(1); opacity: 0.9; }
+        100% { transform: scale(1.08); opacity: 1; }
+    }
+
+    /* ✨ MAIN MESSAGE BOX ✨ */
+    .content {
+        width: 85%;
+        margin: auto;
+        margin-top: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 30px;
+        border-radius: 25px;
+        backdrop-filter: blur(8px);
+        box-shadow: 0 0 25px rgba(255,255,255,0.4);
+        font-size: 25px;
+        line-height: 42px;
+        animation: fadeUp 2.2s ease-in-out;
+        border: 2px solid rgba(255,255,255,0.4);
+    }
+
+    @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(50px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ✨ RISING HEARTS ✨ */
+    .heart {
+        position: absolute;
+        color: #ff0059;
+        font-size: 30px;
+        opacity: 0.7;
+        animation: floatUp 7s linear infinite;
+    }
+    
+    @keyframes floatUp {
+        0% { transform: translateY(0); opacity: 0; }
+        20% { opacity: 1; }
+        100% { transform: translateY(-900px); opacity: 0; }
+    }
+
+    /* 🎈 FLOATING BALLOONS 🎈 */
+    .balloon {
+        position: absolute;
+        width: 60px;
+        height: 80px;
+        background: radial-gradient(circle, #fff 5%, #ff016c 60%);
+        border-radius: 50%;
+        animation: riseBalloon 9s infinite ease-in-out;
+        box-shadow: 0 0 15px rgba(255,255,255,0.7);
+    }
+
+    @keyframes riseBalloon {
+        0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+        20% { opacity: 1; }
+        100% { transform: translateY(-120vh) rotate(360deg); opacity: 0; }
+    }
+
+    /* ✨ GLITTER PARTICLES ✨ */
+    .glitter {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background: white;
+        border-radius: 50%;
+        opacity: 0.8;
+        animation: glitterFloat 4s linear infinite;
+    }
+
+    @keyframes glitterFloat {
+        0% { transform: scale(0.5); }
+        50% { transform: scale(1.5); opacity: 1; }
+        100% { transform: scale(0.3); opacity: 0; }
+    }
+
+    /* 🎆 FIREWORKS 🎆 */
+    .firework {
+        position: absolute;
+        border-radius: 50%;
+        animation: boom 1.5s ease-out infinite;
+    }
+
+    @keyframes boom {
+        0% { transform: scale(0); opacity: 1; }
+        100% { transform: scale(2); opacity: 0; }
+    }
 </style>
 </head>
-<body><div class="container">
-  <div class="left">
-    <img src="/Internal storage/1/1745260667828.png" alt="illustration" />
-  </div>  <div class="right">
-    <div class="logo">✚</div>
-    <h2>Welcome back!</h2>
-    <p>Please enter your details</p><label>Email</label>
-<input type="text" placeholder="Enter your email" />
 
-<label>Password</label>
-<input type="password" placeholder="Enter your password" />
+<body>
 
-<div class="row">
-  <div><input type="checkbox" /> Remember for 30 days</div>
-  <a href="#">Forgot password?</a>
+<h1>❤️ Happy Birthday ❤️<br> Noor Fatima</h1>
+
+<div class="content">
+    دیر ہوسکتی ہے یاد کرنے میں ،<br>
+    لیکن!<br>
+    تم کو بھولا دیں گے یہ خیال دل سے بھولا دینا۔🙂💙🎈<br><br>
+
+    𝗛𝗮𝗽𝗽𝘆 𝗯𝗶𝗿𝘁𝗵𝗱𝗮𝘆 🎂🍰🍦<br>
+    𝘄𝗶𝘀𝗵 𝘆𝗼𝘂 𝗺𝗮𝗻𝘆 𝗺𝗮𝗻𝘆 𝗵𝗮𝗽𝗽𝘆 𝗿𝗲𝘁𝘂𝗿𝗻'𝘀 𝗼𝗳 𝘁𝗵𝗲 𝗱𝗮𝘆...🍰🎂❤️❤️<br><br>
+
+    Allah APKo Hamesha Khush rakhy  
+    or lambiiiiii Zindagi Dy Ameen 🤲✨<br><br>
+
+    𝗚𝗼𝗱 𝗯𝗹𝗲𝘀𝘀 𝘆𝗼𝘂 𝗮𝗹𝘄𝗮𝘆𝘀.  
+    Life is beautiful & endless —  
+    𝗶 𝘄𝗮𝗻𝘁 𝘁𝗼 𝘄𝗶𝘀𝗵 𝘆𝗼𝘂 𝗵𝗮𝗽𝗽𝘆 𝗹𝗶𝗳𝗲 💫❤️<br>
+    𝗮𝗹𝘄𝗮𝘆𝘀 𝗸𝗲𝗲𝗽 𝘀𝗺𝗶𝗹𝗲 𝗼𝗻 𝘆𝗼𝘂𝗿 𝗳𝗮𝗰𝗲 🥀<br><br>
+
+    All wishes especially for you 🥰💜<br>
+    More memories 🥰🍻💫<br><br>
+
+    Sorry late wish k lye 🙂💔
 </div>
 
-<button class="login-btn">Log in</button>
 
-<div class="google-btn">
-  <img src="/Internal storage/1/1745260667828.png" width="20">
-  Log in with Google
-</div>
+<script>
+/* ❤️ RISING HEARTS */
+setInterval(() => {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "❤️";
+    heart.style.left = Math.random() * window.innerWidth + "px";
+    heart.style.animationDuration = (6 + Math.random() * 5) + "s";
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 10000);
+}, 300);
 
-<div class="bottom-text">Don't have an account? <a href="#">Sign Up</a></div>
+/* 🎈 BALLOONS */
+setInterval(() => {
+    const b = document.createElement("div");
+    b.classList.add("balloon");
+    b.style.left = Math.random() * window.innerWidth + "px";
+    b.style.animationDuration = (6 + Math.random() * 5) + "s";
+    document.body.appendChild(b);
+    setTimeout(() => b.remove(), 10000);
+}, 1200);
 
-  </div>
-</div></body>
+/* ✨ GLITTER */
+setInterval(() => {
+    const g = document.createElement("div");
+    g.classList.add("glitter");
+    g.style.left = Math.random() * window.innerWidth + "px";
+    g.style.top = Math.random() * window.innerHeight + "px";
+    g.style.animationDuration = (2 + Math.random() * 3) + "s";
+    document.body.appendChild(g);
+    setTimeout(() => g.remove(), 4000);
+}, 150);
+
+/* 🎆 FIREWORKS */
+setInterval(() => {
+    const fw = document.createElement("div");
+    fw.classList.add("firework");
+    fw.style.left = Math.random() * window.innerWidth + "px";
+    fw.style.top = Math.random() * window.innerHeight + "px";
+    fw.style.width = "15px";
+    fw.style.height = "15px";
+    fw.style.background = `radial-gradient(circle, 
+        #fff, 
+        ${randomColor()}, 
+        transparent)`;
+    document.body.appendChild(fw);
+    setTimeout(() => fw.remove(), 1500);
+}, 900);
+
+function randomColor() {
+    const colors = ["#ff008c", "#ffcc00", "#00eaff", "#ff5e00", "#d400ff"];
+    return colors[Math.floor(Math.random() * colors.length)];
+}
+</script>
+
+</body>
 </html>
